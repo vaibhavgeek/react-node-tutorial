@@ -303,7 +303,9 @@ We need to load the main file on every page of our application, so we add this b
       document.getElementById("root")
     );
 ## Coding our Front-End 
-**![](https://lh4.googleusercontent.com/-YsQeg1SkgT76cgygxcXac9gaZugFx0nEq-9_FcWnMwgeiW0qHWV2cAtocELVIrh-aPPhZJJa_JEkdf5mDx4smxeJ2Cg2HxRXRqvNCsF5ovGcow5csZOO8qrDRKrVbESLUFWQ1r4)**
+**![](https://www.healthyfoodguide.com.au/sites/default/files/styles/article_main/public/The-paleo-diet-Thinkstock-491991691.jpg?itok=RviPSgK8)**
+
+
 Now we come towards the final stage of our tutorial. We need create three pages that will allow us to connect with our node.js backend application. We will use axios, so that will allow us to communicate with our backend APIs. Notice how we pass variables across the render section and our function `componentDidMount()`. We are using a GET request to retrieve all the articles from our back-end. 
 <p class="file-desc"><span>src/allPosts.js</span></p>
 
