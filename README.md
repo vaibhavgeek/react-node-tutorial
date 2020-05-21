@@ -1,5 +1,7 @@
 # Your First SPA in ReactJs, NodeJS
 
+[\[Tutorial Source Code\]](https://github.com/vaibhavgeek/react-node-tutorial) 
+
 Today we are going to build a simple blog application that will help you get started with ReactJS with back-end built over NodeJS The complete tutorial has been split into SIX IMPORTANT steps.
 
 1.  Installing the required tools
@@ -18,6 +20,8 @@ Today we are going to build a simple blog application that will help you get sta
 ## Installing the required tools
 
 ![](https://lh3.googleusercontent.com/ms8rpAlP2RFG8MV-2Vo2XVxCPU_bxCdQCXXP63Da8c4LEdmSixPp_zZj4NfZQKYQAl9HbGA40Hv0oIF7xl_VkT5SV2TiAgfYFmBOlsMmLBMBNF4Ea6BT0cUqiODTPJHY8aVeCoyY)
+
+
 Let’s get our tools installed and start the fire going to get us started with building our Blog Application. We will use ReactJS, NodeJS, Express and MongoDB.
 
 -   Node.js: Node.js is a JavaScript runtime built on Chrome’s V8 JavaScript engine. Node.js brings JavaScript to the server
@@ -45,18 +49,6 @@ $ wget https://nodejs.org/dist/v6.9.2/node-v6.9.2-linux-x64.tar.gz
 
 # tar -xf node-v6.9.2-linux-x64.tar.gz --directory /usr/local --strip-components 1
 ```
-
-Next, we will install express, react, cors and mongoose.
-
-```
-
-$ npm install express body-parser cors mongoose react nodemon
-
-```
-
-A long-form version of the same is to use npm install express/react --save but the shorthand version comes in handy very often.
-
-  
 
 Now, we install MongoDB. You can also cloud solution called as mlab.com but for this tutorial, we will use the one on your system instead.
 
@@ -96,7 +88,26 @@ The back-end will comprise HTTP endpoints to cover the following use cases:
       
     
 
-Let’s understand how NodeJS along with express communicates to the database (mongoose). We will setup the app.js in our project directory and copy-paste the following code. The code is commented on various sections to help you understand with each and every  line of it. Make sure you have setup MongoDB database correctly while implementing this code. You would need to change database URL in order to make this function correctly.  
+Let’s understand how NodeJS along with express communicates to the database (mongoose). We will setup the app.js in our project directory and copy-paste the following code. The code is commented on various sections to help you understand with each and every  line of it. Make sure you have setup MongoDB database correctly while implementing this code. You would need to change database URL in order to make this function correctly.  First we move into our nodejs directory and then we install the requirements. 
+```
+$ mkdir node_backend
+$ cd node_backend
+$ npm init
+```
+Next, we will install express, react, cors, mongoose, nodemon and body-parser.
+Express allows us to make HTTP Requests,  React is our front-end framework, mongoose is mongodb adapter and body-parser allows us to parse json. 
+
+```
+
+$ npm install express body-parser cors mongoose react nodemon
+
+```
+
+A long-form version of the same is to use npm install express/react --save but the shorthand version comes in handy very often.
+
+We now create server.js file which would look something lie this. The file has been commented to explain every line of the code. 
+ <p class="file-desc"><span>/server.js</span></p>
+
 ```
 const express = require('express');  
 // using express library
@@ -430,6 +441,6 @@ Now I would like the fact, that once I click on certain article, I am redirected
     export default article;
 
 
-We are done with our application. You can go to terminal to power them up and chec it out. It would look something like this. 
+We are done with our application. You can go to terminal to power them up and check it out. It would look something like this. [COMPLETE SOURCE CODE FOR THE TUTORIAL](https://github.com/vaibhavgeek/react-node-tutorial)
 **![](https://lh4.googleusercontent.com/JcHvEADRIK2Er9o13kH4_Rv641ZvbOI9sjdeNYb7DU-14Y66s4-OvOHCsGW67mFJDxsuv7uWR1y3gFGzNTJ7IELHOPSpucNH3YHh-XZRTXuRkpZA1GeKhQPCZAk3obzo31IRc97_)**
 **![](https://lh6.googleusercontent.com/30rmNUxOV-b9pVX3uwib0JC47mrc5CPb5PUyjNobYrsfb2U9tk1gdv9OV6CoFrEgG3CWl-KBOCxPYgf3FUSst8CMm62AFnJIzyXdKowOqzg4jdlmGnmoeGHWJdSmdF7Z1cDP8dwd)**
